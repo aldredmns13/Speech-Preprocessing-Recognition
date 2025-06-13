@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page configuration
-st.set_page_config(page_title="Sppech Preprocessing Recognition 🎧", page_icon="🎧")
+st.set_page_config(page_title="Speech Preprocessing Recognition 🎧", page_icon="🎧")
 
 # Custom CSS to make the UI green
 st.markdown(
