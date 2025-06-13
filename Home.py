@@ -1,8 +1,42 @@
-
 import streamlit as st
 
+# Page configuration
 st.set_page_config(page_title="Noise Filter App 🎧", page_icon="🎧")
 
+# Custom CSS to make the UI green
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #006400; /* Dark green */
+        color: white;
+    }
+    .stApp {
+        background-color: #006400;
+    }
+    .stMarkdown, .stText, .stTitle, .stHeader, .stSubheader, .stCode, .stCaption {
+        color: white !important;
+    }
+    .stButton>button {
+        background-color: #228B22;
+        color: white;
+    }
+    .stSidebar {
+        background-color: #004d00;
+        color: white;
+    }
+    .stSidebar .css-1d391kg, .stSidebar .css-1v3fvcr {
+        color: white !important;
+    }
+    .css-1aumxhk {
+        background-color: #006400;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# App content
 st.title("Noise Filter App")
 st.write(
     """
